@@ -37,7 +37,7 @@ Before running CivilCode's [laptop](https://github.com/civilcode/laptop):
 
 - copy `gitconfig` from 1Password to `~/Development/dotfiles-secret/.`
 
-# Source Tree
+### Source Tree
 
 - `mkdir ~/Development/bin && ln -s /usr/local/MacGPG2/bin ~/Development/bin/MacGPG2`
 - Advanced -> `~/Development/bin/MacGPG2`
