@@ -1,3 +1,6 @@
+#!/bin/sh
+
+brew bundle --file=- <<EOF
 brew "ctags"
 brew "jsonpp"
 brew "mysql"
@@ -5,7 +8,7 @@ brew "mysql-utilities"
 brew "vim"
 brew "yarn"
 
-brew "gpg-suite"
+cask "gpg-suite"
 cask "appzapper"
 cask "balsamiq-mockups"
 cask "carbon-copy-cloner"
@@ -17,3 +20,4 @@ cask "postman"
 cask "sequel-pro"
 cask "slack"
 cask "stay"
+EOF
