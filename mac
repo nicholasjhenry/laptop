@@ -1,10 +1,11 @@
-brew "vim"
 brew "ctags"
 brew "jsonpp"
 brew "mysql"
 brew "mysql-utilities"
+brew "vim"
 brew "yarn"
 
+brew "gpg-suite"
 cask "appzapper"
 cask "balsamiq-mockups"
 cask "carbon-copy-cloner"
