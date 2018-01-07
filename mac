@@ -1,3 +1,4 @@
+brew "vim"
 brew "ctags"
 brew "jsonpp"
 brew "mysql"
