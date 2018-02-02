@@ -7,6 +7,7 @@ brew "mysql"
 brew "mysql-utilities"
 brew "vim"
 brew "yarn"
+brew "fd"
 
 cask "gpg-suite"
 cask "appzapper"
