@@ -8,8 +8,9 @@
 
 Before running CivilCode's [laptop](https://github.com/civilcode/laptop):
 
-1. `git clone https://github.com/nicholasjhenry/laptop.git laptop-local`
-2. `ln ~/Development/laptop-local/mac ~/.laptop-local`
+    cd ~/Development
+    git clone https://github.com/nicholasjhenry/laptop.git laptop.local
+    ln -s ~/Development/laptop.local/mac ~/.laptop.local
 
 ## Post-installation setup:
 
