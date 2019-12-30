@@ -35,7 +35,9 @@ Before running CivilCode's [laptop](https://github.com/civilcode/laptop):
 
 ### VSCode
 
-- `cd ~/Library/Application\ Support/Code/User/ && ln -s ~/Development/laptop.local/vscode/settings.json`
+- `cd ~/Library/Application\ Support/Code/User/`
+- `ln -s ~/Development/laptop.local/vscode/settings.json`
+- `ln -s ~/Development/laptop.local/vscode/keybindings.json`
 
 ### 1Password
 
