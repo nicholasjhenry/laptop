@@ -33,6 +33,10 @@ Before running CivilCode's [laptop](https://github.com/civilcode/laptop):
 
 - under vim execute `PlugInstall`
 
+### VSCode
+
+- `cd ~/Library/Application\ Support/Code/User/ && ln -s ~/Development/laptop.local/vscode/settings.json`
+
 ### 1Password
 
 - open 1Password
