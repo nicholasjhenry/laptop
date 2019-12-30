@@ -18,15 +18,20 @@ Before running CivilCode's [laptop](https://github.com/civilcode/laptop):
 
 - see https://github.com/nicholasjhenry/dotfiles
 
-### Vim
-
-- install fonts in ./fonts
-- under vim execute `PlugInstall`
-
 ### iTerm
 
 - see the default profile to use `Solarized Light` (Colors -> Color presets)
+- install fonts in ./fonts and choose Powerline font
 - set as default
+
+### Tmux
+
+- install plugins (prefix + I)
+- https://github.com/tmux-plugins/tpm#installing-plugins
+
+### Vim
+
+- under vim execute `PlugInstall`
 
 ### 1Password
 
