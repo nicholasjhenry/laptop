@@ -1,5 +1,11 @@
 // ~/Library/Application\ Support/Code/User/settings.json
 {
+    "files.trimTrailingWhitespace": true,
+    "terminal.integrated.env.osx": {
+        "EDITOR": "code",
+        "GIT_EDITOR": "code -w",
+    },
+    "editor.tabSize": 2,
     "window.zoomLevel": 1,
     "workbench.colorTheme": "Atom One Light",
     "workbench.editor.showTabs": false,
@@ -24,5 +30,13 @@
     "editor.minimap.enabled": false,
     "python.linting.enabled": false,
     "editor.renderWhitespace": "all",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
     "terminal.integrated.fontFamily": "Monaco for Powerline",
+    "explorer.confirmDragAndDrop": false,
+    "terminal.external.osxExec": "iTerm.app",
+    "emmet.includeLanguages": {
+        "HTML (Eex)": "html"
+    },
+    "workbench.sideBar.location": "left",
 }
