@@ -39,4 +39,6 @@
         "HTML (Eex)": "html"
     },
     "workbench.sideBar.location": "left",
+    "elixirLS.dialyzerEnabled": false,
+    "elixirLS.projectDir": ".",
 }
