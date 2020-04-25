@@ -63,5 +63,6 @@ Before running CivilCode's [laptop](https://github.com/civilcode/laptop):
 
 - Fonts installed with HomeBrew
 - prefered editor font `fira-code` / `Fira Code`
+- TODO Review powerline fonts (manually install `/fonts')
 
 You're good to go!
