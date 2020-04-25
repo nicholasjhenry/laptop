@@ -3,7 +3,7 @@ brew tap homebrew/cask-fonts
 
 brew bundle --file=- <<EOF
 brew "ctags"
-brew "jsonpp"
+brew "jq"
 brew "vim"
 brew "yarn"
 brew "fd"
