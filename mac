@@ -10,6 +10,7 @@ brew "fd"
 brew "sqlparse"
 brew "rg"
 brew "tldr"
+brew "bat"
 
 cask "gpg-suite"
 cask "appzapper"
