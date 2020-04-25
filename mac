@@ -8,6 +8,7 @@ brew "vim"
 brew "yarn"
 brew "fd"
 brew "sqlparse"
+brew "rg"
 brew "tldr"
 
 cask "gpg-suite"
