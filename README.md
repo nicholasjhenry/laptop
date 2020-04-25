@@ -59,4 +59,9 @@ Before running CivilCode's [laptop](https://github.com/civilcode/laptop):
 - Advanced -> `~/Development/bin/MacGPG2`
 - General -> Fullname / Email
 
+### Fonts
+
+- Fonts installed with HomeBrew
+- prefered editor font `fira-code` / `Fira Code`
+
 You're good to go!
