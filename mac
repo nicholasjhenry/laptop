@@ -34,4 +34,5 @@ cask "caffeine"
 cask "carbon-copy-cloner"
 cask "deckset"
 cask "divvy"
+cask "ngrok"
 EOF
