@@ -164,7 +164,6 @@ brew bundle --file=- <<EOF
 
   # Desktop Apps
   cask "1password"
-  cask "google-drive-file-stream"
   cask "google-chrome"
   cask "iterm2"
   cask "keybase"
@@ -178,15 +177,12 @@ brew bundle --file=- <<EOF
   brew "tldr"
 
   cask "appzapper"
-  cask "balsamiq-mockups"
+  cask "balsamiq-wireframes"
   cask "caffeine"
-  cask "carbon-copy-cloner"
   cask "carbon-copy-cloner"
   cask "dash"
   cask "deckset"
   cask "divvy"
-  cask "font-fira-code"
-  cask "google-drive-file-stream"
   cask "keybase"
   cask "ngrok"
   cask "stay"
