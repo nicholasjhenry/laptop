@@ -136,6 +136,7 @@ brew bundle --file=- <<EOF
   brew "xsv"
   brew "zsh"
   brew "zsh-completions"
+  brew "zplug"
 
   # Heroku
   brew "heroku/brew/heroku"
@@ -230,6 +231,7 @@ if [ ! -d "$HOME/Development" ]; then
   mkdir ~/Development
 fi
 
+# brew search font-
 brew tap homebrew/cask-fonts
 
 # End: Customizations
