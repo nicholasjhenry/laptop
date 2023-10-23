@@ -232,8 +232,10 @@ if [ ! -d "$HOME/Development" ]; then
   mkdir ~/Development
 fi
 
-# brew search font-
+# `brew search font-`
 brew tap homebrew/cask-fonts
+brew install font-fira-code
+brew install font-fira-mono-for-powerline
 
 # End: Customizations
 
