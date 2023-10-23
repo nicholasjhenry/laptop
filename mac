@@ -187,6 +187,7 @@ brew bundle --file=- <<EOF
   cask "keybase"
   cask "ngrok"
   cask "stay"
+  cask "visual-studio-code"
 
   # End: customization
 EOF
