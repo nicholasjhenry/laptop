@@ -17,6 +17,7 @@ Before running CivilCode's [laptop](https://github.com/civilcode/laptop):
 ### 1Password
 
 - open 1Password and sign-in with credentials
+- setup with CLI (step 2): https://developer.1password.com/docs/cli/get-started
 
 ### iTerm
 
