@@ -165,6 +165,7 @@ brew bundle --file=- <<EOF
 
   # Desktop Apps
   cask "1password"
+  cask "1password-cli"
   cask "google-chrome"
   cask "iterm2"
   cask "keybase"
