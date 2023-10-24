@@ -48,7 +48,7 @@ Before running CivilCode's [laptop](https://github.com/civilcode/laptop):
 
 ### Tmux
 
-- install plugins (prefix + I)
-- https://github.com/tmux-plugins/tpm#installing-plugins
+- install plugins: `prefix (Ctrl-x) + I`
+- FYI: https://github.com/tmux-plugins/tpm#installing-plugins
 
 You're good to go!
