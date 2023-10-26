@@ -164,20 +164,14 @@ brew bundle --file=- <<EOF
   # Start: customization
 
   # Desktop Apps
-  cask "1password"
-  cask "1password-cli"
-  cask "google-chrome"
-  cask "iterm2"
-  cask "keybase"
-  cask "slack"
-  cask "sourcetree"
-
   brew "bat"
   brew "fd"
   brew "jq"
   brew "rg"
   brew "tldr"
 
+  cask "1password"
+  cask "1password-cli"
   cask "appzapper"
   cask "balsamiq-wireframes"
   cask "caffeine"
@@ -185,8 +179,14 @@ brew bundle --file=- <<EOF
   cask "dash"
   cask "deckset"
   cask "divvy"
+  cask "google-chrome"
+  cask "iterm2"
   cask "keybase"
+  cask "keybase"
+  cask "mailplane"
   cask "ngrok"
+  cask "slack"
+  cask "sourcetree"
   cask "stay"
   cask "visual-studio-code"
 
