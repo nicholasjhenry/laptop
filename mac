@@ -154,7 +154,6 @@ brew bundle --file=- <<EOF
   brew "coreutils"
   brew "libtool"
   brew "libyaml" # should come after openssl
-  brew "openssl"
   brew "unixodbc"
   cask "gpg-suite-no-mail"
 
@@ -179,16 +178,21 @@ brew bundle --file=- <<EOF
   cask "dash"
   cask "deckset"
   cask "divvy"
+  cask "drawio"
   cask "google-chrome"
   cask "iterm2"
   cask "keybase"
   cask "mailplane"
+  cask "monodraw"
+  cask "netdownloadhelpercoapp"
   cask "ngrok"
   cask "notion"
   cask "slack"
   cask "sourcetree"
   cask "stay"
+  cask "typora"
   cask "visual-studio-code"
+  cask "zoom"
 
   # End: customization
 EOF
