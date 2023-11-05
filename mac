@@ -162,13 +162,13 @@ brew bundle --file=- <<EOF
 
   # Start: customization
 
-  # Desktop Apps
   brew "bat"
   brew "fd"
   brew "jq"
   brew "rg"
   brew "tldr"
 
+  # Desktop Apps
   cask "1password"
   cask "1password-cli"
   cask "appzapper"
