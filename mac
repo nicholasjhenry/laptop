@@ -164,6 +164,7 @@ brew bundle --file=- <<EOF
 
   brew "bat"
   brew "fd"
+  brew "glow"
   brew "jq"
   brew "rg"
   brew "tldr"
