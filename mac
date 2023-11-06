@@ -162,6 +162,7 @@ brew bundle --file=- <<EOF
 
   # Start: customization
 
+  brew "awscli"
   brew "bat"
   brew "fd"
   brew "git-delta"
