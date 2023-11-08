@@ -235,9 +235,8 @@ install_asdf_language() {
 
 # Start: Customizations
 
-# Setup Development directory. This is where all CivilCode development takes place.
-if [ ! -d "$HOME/Development" ]; then
-  mkdir ~/Development
+if [ ! -d "$HOME/Workspaces" ]; then
+  mkdir ~/Workspaces
 fi
 
 # `brew search font-`
