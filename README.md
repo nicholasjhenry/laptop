@@ -1,16 +1,18 @@
 # Personal Laptop Installation
 
-- Co-founder and Business Application Developer at [CivilCode Inc.](http://www.civilcode.io)
 - Follow me on [Twitter](http://www.twitter.com/nicholasjhenry)
 - Connect via [LinkedIn](http://ca.linkedin.com/in/nicholasjhenry)
 
-## Pre-installation setup:
+Laptop is a script to set up an macOS laptop for web development.
 
-Before running CivilCode's [laptop](https://github.com/civilcode/laptop):
+It can be run multiple times on the same machine safely. It installs, upgrades, or skips packages
+based on what is already installed on the machine.
 
-    cd ~/Development
-    git clone https://github.com/nicholasjhenry/laptop.git laptop.local
-    ln -s ~/Development/laptop.local/mac ~/.laptop.local
+## Install:
+
+    curl --remote-name https://raw.githubusercontent.com/nicholasjhenry/laptop/master/mac
+    less mac
+    sh mac 2>&1 | tee ~/laptop.log
 
 ## Post-installation laptop setup
 
