@@ -170,6 +170,7 @@ brew bundle --file=- <<EOF
   brew "jq"
   brew "rg"
   brew "tldr"
+  brew "wxwidgets"
 
   # Desktop Apps
   cask "1password"
