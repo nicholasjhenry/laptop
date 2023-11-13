@@ -184,6 +184,7 @@ brew bundle --file=- <<EOF
   cask "divvy"
   cask "drawio"
   cask "google-chrome"
+  cask "google-drive"
   cask "iterm2"
   cask "keybase"
   cask "mailplane"
