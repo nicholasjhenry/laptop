@@ -33,7 +33,6 @@ based on what is already installed on the machine.
 
 ### Source Tree
 
-- Advanced -> `~/Development/bin/MacGPG2`
 - General -> Fullname / Email
 
 ### GPG
@@ -47,7 +46,7 @@ based on what is already installed on the machine.
 
 ### Git
 
-- copy `gitconfig` from 1Password to `~/Development/dotfiles-secret/.`
+- copy `gitconfig` from 1Password to `~/Workspaces/dotfiles-secret/.`
 
 ### Tmux
 
