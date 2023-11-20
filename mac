@@ -194,6 +194,7 @@ brew bundle --file=- <<EOF
   cask "netdownloadhelpercoapp"
   cask "ngrok"
   cask "notion"
+  cask "raycast"
   cask "slack"
   cask "sourcetree"
   cask "stay"
