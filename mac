@@ -158,7 +158,7 @@ brew bundle --file=- <<EOF
   cask "gpg-suite-no-mail"
 
   # Databases
-  brew "postgresql@14"
+  brew "postgresql@15"
 
   # Start: customization
 
