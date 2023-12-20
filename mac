@@ -167,9 +167,11 @@ brew bundle --file=- <<EOF
   brew "fd"
   brew "git-delta"
   brew "glow"
+  brew "gum"
   brew "jq"
   brew "rg"
   brew "tldr"
+  brew "tree"
   brew "wxwidgets"
 
   # Desktop Apps
