@@ -194,6 +194,7 @@ brew bundle --file=- <<EOF
   cask "keycastr"
   cask "mailplane"
   cask "monodraw"
+  cask "obsidian"
   cask "netdownloadhelpercoapp"
   cask "ngrok"
   cask "notion"
