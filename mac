@@ -251,6 +251,7 @@ if [ ! -d "$HOME/Workspaces" ]; then
 fi
 
 # `brew search font-`
+brew install font-caveat
 brew install font-fira-code
 brew install font-fira-mono-for-powerline
 
