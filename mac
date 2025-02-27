@@ -162,6 +162,7 @@ brew bundle --file=- <<EOF
 
   # Start: customization
 
+  brew "aha"
   brew "awscli"
   brew "bat"
   brew "fd"
@@ -205,6 +206,7 @@ brew bundle --file=- <<EOF
   cask "sourcetree"
   cask "stay"
   cask "typora"
+  cask "wkhtmltopdf"
   cask "visual-studio-code"
   cask "zoom"
 
@@ -215,34 +217,11 @@ fancy_echo "Update heroku binary ..."
 brew unlink heroku
 brew link --force heroku
 
-fancy_echo "Configuring asdf version manager ..."
-if [ ! -d "$HOME/.asdf" ]; then
-  brew install asdf
-  append_to_zshrc "source $(brew --prefix asdf)/libexec/asdf.sh" 1
+fancy_echo "Configuring mise version manager ..."
+if [ ! -d "$HOME/.mise" ]; then
+  brew install mise
+  append_to_zshrc "eval \"$(mise activate zsh)"\" 1
 fi
-
-alias install_asdf_plugin=add_or_update_asdf_plugin
-add_or_update_asdf_plugin() {
-  local name="$1"
-  local url="$2"
-
-  if ! asdf plugin-list | grep -Fq "$name"; then
-    asdf plugin-add "$name" "$url"
-  else
-    asdf plugin-update "$name"
-  fi
-}
-
-install_asdf_language() {
-  local language="$1"
-  local version
-  version="$(asdf list-all "$language" | grep -v "[a-z]" | tail -1)"
-
-  if ! asdf list "$language" | grep -Fq "$version"; then
-    asdf install "$language" "$version"
-    asdf global "$language" "$version"
-  fi
-}
 
 # Start: Customizations
 
