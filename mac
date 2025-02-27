@@ -167,6 +167,7 @@ brew bundle --file=- <<EOF
   brew "bat"
   brew "fd"
   brew "httpie"
+  brew "git-cliff"
   brew "git-delta"
   brew "glow"
   brew "graphviz"
