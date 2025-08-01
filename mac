@@ -191,7 +191,6 @@ brew bundle --file=- <<EOF
   cask "drawio"
   cask "google-chrome"
   cask "google-drive"
-  cask "grammarly"
   cask "grammarly-desktop"
   cask "iterm2"
   cask "keybase"
