@@ -158,7 +158,10 @@ brew bundle --file=- <<EOF
   cask "gpg-suite-no-mail"
 
   # Databases
+  # Update .zshrc accordingly
+  # export PATH="/usr/local/opt/postgresql@VV/bin:$PATH"
   brew "postgresql@16"
+  brew "postgresql@17"
 
   # Start: customization
 
@@ -232,7 +235,8 @@ fi
 # `brew search font-`
 brew install font-caveat
 brew install font-fira-code
-brew install font-fira-mono-for-powerline
+brew install font-fira-code
+brew install font-inter
 
 # End: Customizations
 
