@@ -18,7 +18,7 @@ append_to_zshrc() {
     local text="$1" zshrc
     local skip_new_line="${2:-0}"
 
-    if ( (0)); then # [ -w "$HOME/.zshrc.local" ]
+    if [ false ]; then # [ -w "$HOME/.zshrc.local" ]
         zshrc="$HOME/.zshrc.local"
     else
         zshrc="$HOME/.zshrc"
@@ -178,40 +178,52 @@ brew bundle --file=- <<EOF
   brew "tree"
   brew "wxwidgets"
 
-  # Desktop Apps
-  cask "1password"
-  cask "1password-cli"
-  cask "appzapper"
-  cask "balsamiq-wireframes"
-  cask "calibre"
-  cask "carbon-copy-cloner"
-  cask "dash"
-  cask "deckset"
-  cask "divvy"
-  cask "drawio"
-  cask "google-chrome"
-  cask "google-drive"
-  cask "grammarly-desktop"
   cask "iterm2"
-  cask "keybase"
-  cask "keycastr"
-  cask "mailplane"
-  cask "monodraw"
-  cask "obsidian"
-  cask "netdownloadhelpercoapp"
-  cask "ngrok"
-  cask "notion"
-  cask "raycast"
-  cask "slack"
-  cask "sourcetree"
-  cask "stay"
-  cask "typora"
-  cask "wkhtmltopdf"
   cask "visual-studio-code"
-  cask "zoom"
 
   # End: customization
 EOF
+
+if [ -z "$SLIM" ]; then
+
+    brew bundle --file=- <<EOF
+# Start: customization
+
+# Desktop Apps
+cask "1password"
+cask "1password-cli"
+cask "appzapper"
+cask "balsamiq-wireframes"
+cask "calibre"
+cask "carbon-copy-cloner"
+cask "dash"
+cask "deckset"
+cask "divvy"
+cask "drawio"
+cask "google-chrome"
+cask "google-drive"
+cask "grammarly-desktop"
+cask "iterm2"
+cask "keybase"
+cask "keycastr"
+cask "mailplane"
+cask "monodraw"
+cask "obsidian"
+cask "netdownloadhelpercoapp"
+cask "ngrok"
+cask "notion"
+cask "raycast"
+cask "slack"
+cask "sourcetree"
+cask "stay"
+cask "typora"
+cask "wkhtmltopdf"
+cask "zoom"
+
+# End: customization
+EOF
+
+fi
 
 fancy_echo "Update heroku binary ..."
 brew unlink heroku
