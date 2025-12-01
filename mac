@@ -7,29 +7,30 @@
 # shellcheck disable=SC3043
 
 fancy_echo() {
-  local fmt="$1"; shift
+    local fmt="$1"
+    shift
 
-  # shellcheck disable=SC2059
-  printf "\\n$fmt\\n" "$@"
+    # shellcheck disable=SC2059
+    printf "\\n$fmt\\n" "$@"
 }
 
 append_to_zshrc() {
-  local text="$1" zshrc
-  local skip_new_line="${2:-0}"
+    local text="$1" zshrc
+    local skip_new_line="${2:-0}"
 
-  if ((0)); then # [ -w "$HOME/.zshrc.local" ]
-    zshrc="$HOME/.zshrc.local"
-  else
-    zshrc="$HOME/.zshrc"
-  fi
-
-  if ! grep -Fqs "$text" "$zshrc"; then
-    if [ "$skip_new_line" -eq 1 ]; then
-      printf "%s\\n" "$text" >> "$zshrc"
+    if ( (0)); then # [ -w "$HOME/.zshrc.local" ]
+        zshrc="$HOME/.zshrc.local"
     else
-      printf "\\n%s\\n" "$text" >> "$zshrc"
+        zshrc="$HOME/.zshrc"
     fi
-  fi
+
+    if ! grep -Fqs "$text" "$zshrc"; then
+        if [ "$skip_new_line" -eq 1 ]; then
+            printf "%s\\n" "$text" >>"$zshrc"
+        else
+            printf "\\n%s\\n" "$text" >>"$zshrc"
+        fi
+    fi
 }
 
 # shellcheck disable=SC2154
@@ -38,11 +39,11 @@ trap 'ret=$?; test $ret -ne 0 && printf "failed\n\n" >&2; exit $ret' EXIT
 set -e
 
 if [ ! -d "$HOME/.bin/" ]; then
-  mkdir "$HOME/.bin"
+    mkdir "$HOME/.bin"
 fi
 
 if [ ! -f "$HOME/.zshrc" ]; then
-  touch "$HOME/.zshrc"
+    touch "$HOME/.zshrc"
 fi
 
 # shellcheck disable=SC2016
@@ -51,61 +52,58 @@ append_to_zshrc 'export PATH="$HOME/.bin:$PATH"'
 # Determine Homebrew prefix
 arch="$(uname -m)"
 if [ "$arch" = "arm64" ]; then
-  HOMEBREW_PREFIX="/opt/homebrew"
+    HOMEBREW_PREFIX="/opt/homebrew"
 else
-  HOMEBREW_PREFIX="/usr/local"
+    HOMEBREW_PREFIX="/usr/local"
 fi
 
 update_shell() {
-  local shell_path;
-  shell_path="$(which zsh)"
+    local shell_path
+    shell_path="$(which zsh)"
 
-  fancy_echo "Changing your shell to zsh ..."
-  if ! grep "$shell_path" /etc/shells > /dev/null 2>&1 ; then
-    fancy_echo "Adding '$shell_path' to /etc/shells"
-    sudo sh -c "echo $shell_path >> /etc/shells"
-  fi
-  sudo chsh -s "$shell_path" "$USER"
+    fancy_echo "Changing your shell to zsh ..."
+    if ! grep "$shell_path" /etc/shells >/dev/null 2>&1; then
+        fancy_echo "Adding '$shell_path' to /etc/shells"
+        sudo sh -c "echo $shell_path >> /etc/shells"
+    fi
+    sudo chsh -s "$shell_path" "$USER"
 }
 
 case "$SHELL" in
-  */zsh)
-    if [ "$(which zsh)" != '/usr/local/bin/zsh' ] ; then
-      update_shell
+*/zsh)
+    if [ "$(which zsh)" != '/usr/local/bin/zsh' ]; then
+        update_shell
     fi
     ;;
-  *)
+*)
     update_shell
     ;;
 esac
 
 # checks architecture
-if [ "$(uname -m)" = "arm64" ]
-  then
-  # checks if Rosetta is already installed
-  if ! pkgutil --pkg-info=com.apple.pkg.RosettaUpdateAuto > /dev/null 2>&1
-  then
-    echo "Installing Rosetta"
-    # Installs Rosetta2
-    softwareupdate --install-rosetta --agree-to-license
-  else
-    echo "Rosetta is installed"
-  fi
+if [ "$(uname -m)" = "arm64" ]; then
+    # checks if Rosetta is already installed
+    if ! pkgutil --pkg-info=com.apple.pkg.RosettaUpdateAuto >/dev/null 2>&1; then
+        echo "Installing Rosetta"
+        # Installs Rosetta2
+        softwareupdate --install-rosetta --agree-to-license
+    else
+        echo "Rosetta is installed"
+    fi
 fi
 
-
 gem_install_or_update() {
-  if gem list "$1" --installed > /dev/null; then
-    gem update "$@"
-  else
-    gem install "$@"
-  fi
+    if gem list "$1" --installed >/dev/null; then
+        gem update "$@"
+    else
+        gem install "$@"
+    fi
 }
 
 if ! command -v brew >/dev/null; then
-  fancy_echo "Installing Homebrew ..."
+    fancy_echo "Installing Homebrew ..."
     /bin/bash -c \
-      "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     append_to_zshrc "eval \"\$($HOMEBREW_PREFIX/bin/brew shellenv)\""
 
@@ -113,15 +111,14 @@ if ! command -v brew >/dev/null; then
 fi
 
 if brew list | grep -Fq brew-cask; then
-  fancy_echo "Uninstalling old Homebrew-Cask ..."
-  brew uninstall --force brew-cask
+    fancy_echo "Uninstalling old Homebrew-Cask ..."
+    brew uninstall --force brew-cask
 fi
 
 fancy_echo "Updating Homebrew formulae ..."
 brew update --force
 brew bundle --file=- <<EOF
   tap "thoughtbot/formulae"
-  tap "homebrew/services"
   tap "heroku/brew"
 
   # Unix
@@ -222,14 +219,14 @@ brew link --force heroku
 
 fancy_echo "Configuring mise version manager ..."
 if [ ! -d "$HOME/.mise" ]; then
-  brew install mise
-  append_to_zshrc "eval \"$(mise activate zsh)"\" 1
+    brew install mise
+    append_to_zshrc "eval \"$(mise activate zsh)"\" 1
 fi
 
 # Start: Customizations
 
 if [ ! -d "$HOME/Workspaces" ]; then
-  mkdir ~/Workspaces
+    mkdir ~/Workspaces
 fi
 
 # `brew search font-`
@@ -241,7 +238,7 @@ brew install font-inter
 # End: Customizations
 
 if [ -f "$HOME/.laptop.local" ]; then
-  fancy_echo "Running your customizations from ~/.laptop.local ..."
-  # shellcheck disable=SC1091
-  . "$HOME/.laptop.local"
+    fancy_echo "Running your customizations from ~/.laptop.local ..."
+    # shellcheck disable=SC1091
+    . "$HOME/.laptop.local"
 fi
