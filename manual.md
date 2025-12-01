@@ -1,1 +1,2 @@
-- [OrbStack](https://orbstack.dev/download)
+- [ ] [OrbStack](https://orbstack.dev/download)
+- [ ] Modifier Key: Caps Lock => Escape
