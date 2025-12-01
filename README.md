@@ -16,9 +16,9 @@ based on what is already installed on the machine.
     
 ## Slim Install
 
-To reduce the amount of applications installed:
+To reduce the amount of applications installed (consider adding to `.zshrc`):
 
-    SLIM=true sh mac 2>&1 | tee ~/laptop.log
+    LAPTOP_SLIM=true sh mac 2>&1 | tee ~/laptop.log
 
 ## Post-installation laptop setup
 

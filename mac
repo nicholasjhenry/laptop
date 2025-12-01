@@ -186,7 +186,7 @@ brew bundle --file=- <<EOF
   # End: customization
 EOF
 
-if [ -z "$SLIM" ]; then
+if [ -z "$LAPTOP_SLIM" ]; then
 
     brew bundle --file=- <<EOF
 # Start: customization
