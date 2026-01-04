@@ -178,7 +178,7 @@ brew bundle --file=- <<EOF
   brew "rg"
   brew "tldr"
   brew "tree"
-  brew "wxwidgets"
+  brew "wxwidgets@3.2"
 
   cask "iterm2"
   cask "visual-studio-code"
