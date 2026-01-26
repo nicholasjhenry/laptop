@@ -18,7 +18,7 @@ append_to_zshrc() {
     local text="$1" zshrc
     local skip_new_line="${2:-0}"
 
-    if [ false ]; then # [ -w "$HOME/.zshrc.local" ]
+    if [ -w "$HOME/.zshrc.local" ]; then
         zshrc="$HOME/.zshrc.local"
     else
         zshrc="$HOME/.zshrc"
@@ -59,7 +59,7 @@ fi
 
 update_shell() {
     local shell_path
-    shell_path="$(which zsh)"
+    shell_path="$(command -v zsh)"
 
     fancy_echo "Changing your shell to zsh ..."
     if ! grep "$shell_path" /etc/shells >/dev/null 2>&1; then
@@ -71,7 +71,7 @@ update_shell() {
 
 case "$SHELL" in
 */zsh)
-    if [ "$(which zsh)" != '/usr/local/bin/zsh' ]; then
+    if [ "$(command -v zsh)" != "$HOMEBREW_PREFIX/bin/zsh" ]; then
         update_shell
     fi
     ;;
@@ -116,7 +116,7 @@ if brew list | grep -Fq brew-cask; then
 fi
 
 fancy_echo "Updating Homebrew formulae ..."
-brew update --force
+brew update --force # https://github.com/Homebrew/brew/issues/1151
 brew bundle --file=- <<EOF
   tap "thoughtbot/formulae"
   tap "heroku/brew"
