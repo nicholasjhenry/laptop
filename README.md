@@ -48,6 +48,7 @@ To reduce the amount of applications installed (consider adding to `.zshrc`):
 
 ### Dotfiles
 
+- prerequisite: 1Password (see above)
 - see https://github.com/nicholasjhenry/dotfiles
 
 ### Git
