@@ -230,7 +230,9 @@ brew unlink heroku
 brew link --force heroku
 
 fancy_echo "Configuring mise version manager ..."
-if [ ! -d "$HOME/.mise" ]; then
+if command -v mise &> /dev/null; then
+    fancy_echo "... already installed, skipping."
+else
     brew install mise
     append_to_zshrc "eval \"$(mise activate zsh)"\" 1
 fi
