@@ -176,6 +176,7 @@ brew bundle --file=- <<EOF
   brew "jq"
   brew "pgformatter"
   brew "rg"
+  brew "terminal-notifier"
   brew "tldr"
   brew "tree"
   brew "wxwidgets@3.2"
