@@ -8,6 +8,7 @@
 
 ## MacOS
 
+- [ ] Enable Touch ID
 - [ ] Modifier Key: Caps Lock => Escape
 - [ ] Trackpad: Tap to click
 - [ ] Screenshots folder (see notes)
