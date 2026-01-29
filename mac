@@ -200,6 +200,7 @@ cask "balsamiq-wireframes"
 cask "calibre"
 cask "carbon-copy-cloner"
 cask "dash"
+cask "ddpm" # Dell Display and Peripheral Manager
 cask "deckset"
 cask "divvy"
 cask "drawio"
