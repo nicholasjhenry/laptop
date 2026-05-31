@@ -3,7 +3,7 @@
 - Follow me on [Twitter](http://www.twitter.com/nicholasjhenry)
 - Connect via [LinkedIn](http://ca.linkedin.com/in/nicholasjhenry)
 
-Laptop is a script to set up an macOS laptop for web development.
+Laptop is a script to set up a macOS laptop for web development.
 
 It can be run multiple times on the same machine safely. It installs, upgrades, or skips packages
 based on what is already installed on the machine.
