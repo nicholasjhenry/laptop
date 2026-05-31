@@ -237,7 +237,7 @@ if command -v mise &> /dev/null; then
     fancy_echo "... already installed, skipping."
 else
     brew install mise
-    append_to_zshrc "eval \"$(mise activate zsh)"\" 1
+    append_to_zshrc 'eval "$(mise activate zsh)"' 1
 fi
 
 # Start: Customizations
