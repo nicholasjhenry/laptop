@@ -43,7 +43,7 @@ To reduce the amount of applications installed (consider adding to `.zshrc`):
 
 ### GPG
 
-- assuming `brew cask install gpg-suite-no-mail`
+- installed via the `mac` script's Brewfile
 - import sec/pub file from 1Password
 
 ### Dotfiles
