@@ -69,17 +69,6 @@ update_shell() {
     sudo chsh -s "$shell_path" "$USER"
 }
 
-case "$SHELL" in
-*/zsh)
-    if [ "$(command -v zsh)" != "$HOMEBREW_PREFIX/bin/zsh" ]; then
-        update_shell
-    fi
-    ;;
-*)
-    update_shell
-    ;;
-esac
-
 # checks architecture
 if [ "$arch" = "arm64" ]; then
     # checks if Rosetta is already installed
@@ -190,6 +179,18 @@ brew bundle --file=- <<EOF
 
   # End: customization
 EOF
+
+# Now that Homebrew's zsh is installed, register it as the login shell.
+case "$SHELL" in
+*/zsh)
+    if [ "$(command -v zsh)" != "$HOMEBREW_PREFIX/bin/zsh" ]; then
+        update_shell
+    fi
+    ;;
+*)
+    update_shell
+    ;;
+esac
 
 if [ -z "$LAPTOP_SLIM" ]; then
 
