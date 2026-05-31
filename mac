@@ -81,7 +81,7 @@ case "$SHELL" in
 esac
 
 # checks architecture
-if [ "$(uname -m)" = "arm64" ]; then
+if [ "$arch" = "arm64" ]; then
     # checks if Rosetta is already installed
     if ! pkgutil --pkg-info=com.apple.pkg.RosettaUpdateAuto >/dev/null 2>&1; then
         echo "Installing Rosetta"
