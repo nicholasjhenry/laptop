@@ -59,5 +59,5 @@ You're good to go!
 
 ## About
 
-- Follow me on [Twitter](http://www.twitter.com/nicholasjhenry)
+- Follow me on [BlueSky](https://bsky.app/profile/nicholasjhenry.github.io)
 - Connect via [LinkedIn](http://ca.linkedin.com/in/nicholasjhenry)
