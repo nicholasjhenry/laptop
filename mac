@@ -248,8 +248,7 @@ fi
 
 # `brew search font-`
 brew install font-caveat
-brew install font-fira-code
-brew install font-fira-code
+brew install font-fira-code-nerd-font
 brew install font-inter
 
 # End: Customizations

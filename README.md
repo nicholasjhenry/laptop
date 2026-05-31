@@ -30,7 +30,7 @@ To reduce the amount of applications installed (consider adding to `.zshrc`):
 ### iTerm
 
 - see the default profile to use `Solarized Light` (Colors -> Color presets)
-- set text: `Fira Mono for Powerline` (Profile > Text > Font)
+- set text: `FiraCode Nerd Font Mono` (Profile > Text > Font)
 - set as default
 
 ### VSCode
