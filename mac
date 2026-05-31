@@ -179,7 +179,7 @@ if [ "$SHELL" != "$HOMEBREW_PREFIX/bin/zsh" ]; then
     update_shell
 fi
 
-if [ -z "$LAPTOP_SLIM" ]; then
+if [ "$LAPTOP_SLIM" != "true" ]; then
 
     brew bundle --file=- <<EOF
 # Start: customization
