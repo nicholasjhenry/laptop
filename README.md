@@ -16,7 +16,8 @@ based on what is already installed on the machine.
     
 ## Slim Install
 
-To reduce the amount of applications installed (consider adding to `.zshrc`):
+Skip the bundle of optional desktop apps (1Password, Slack, Zoom, Sourcetree, browsers, fonts-adjacent
+utilities, etc.) and install only the core CLI tooling:
 
     LAPTOP_SLIM=true sh mac 2>&1 | tee ~/laptop.log
 
