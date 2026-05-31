@@ -3,7 +3,7 @@
 ## Software
 
 - [ ] [OrbStack](https://orbstack.dev/download)
-- [ ] Setup DDPM `brew install ddpm`
+- [ ] Configure DDPM (installed via cask in `mac`)
 - [ ] Setup Raycast: Switch Spotlight "Keyboard shortcuts" to Option-Space; configure Raycast with Command-Space
 
 ## MacOS
