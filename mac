@@ -34,7 +34,7 @@ append_to_zshrc() {
 }
 
 # shellcheck disable=SC2154
-trap 'ret=$?; test $ret -ne 0 && printf "failed\n\n" >&2; exit $ret' EXIT
+trap 'ret=$?; if [ $ret -ne 0 ] && [ $ret -ne 130 ] && [ $ret -ne 143 ]; then printf "failed\n\n" >&2; fi; exit $ret' EXIT
 
 set -e
 
