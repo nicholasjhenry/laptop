@@ -153,6 +153,8 @@ brew bundle --file=- <<EOF
   brew "libtool"
   brew "libyaml" # should come after openssl
   brew "unixodbc"
+
+  # Encryption / signing
   cask "gpg-suite-no-mail"
 
   # Databases
