@@ -180,16 +180,9 @@ brew bundle --file=- <<EOF
 EOF
 
 # Now that Homebrew's zsh is installed, register it as the login shell.
-case "$SHELL" in
-*/zsh)
-    if [ "$(command -v zsh)" != "$HOMEBREW_PREFIX/bin/zsh" ]; then
-        update_shell
-    fi
-    ;;
-*)
+if [ "$SHELL" != "$HOMEBREW_PREFIX/bin/zsh" ]; then
     update_shell
-    ;;
-esac
+fi
 
 if [ -z "$LAPTOP_SLIM" ]; then
 
