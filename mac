@@ -166,6 +166,7 @@ brew bundle --file=- <<EOF
   brew "aha"
   brew "awscli"
   brew "bat"
+  brew "eza"
   brew "fd"
   brew "httpie"
   brew "git-cliff"
