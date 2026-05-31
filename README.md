@@ -49,12 +49,9 @@ utilities, etc.) and install only the core CLI tooling:
 
 ### Dotfiles
 
-- prerequisite: 1Password (see above)
-- see https://github.com/nicholasjhenry/dotfiles
-
-### Git
-
-- copy `gitconfig` from 1Password to `~/Workspaces/dotfiles-secret/.`
+1. complete the 1Password setup above
+2. follow the install steps at https://github.com/nicholasjhenry/dotfiles
+3. copy `gitconfig` from 1Password to `~/Workspaces/dotfiles-secret/.`
 
 ### Tmux
 
