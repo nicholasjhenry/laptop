@@ -101,77 +101,77 @@ fi
 fancy_echo "Updating Homebrew formulae ..."
 brew update --force # https://github.com/Homebrew/brew/issues/1151
 brew bundle --file=- <<EOF
-  tap "thoughtbot/formulae"
-  tap "heroku/brew"
+tap "thoughtbot/formulae"
+tap "heroku/brew"
 
-  # Unix
-  brew "universal-ctags"
-  brew "git"
-  brew "openssl"
-  brew "rcm"
-  brew "reattach-to-user-namespace"
-  brew "shfmt"
-  brew "tmux"
-  brew "vim"
-  brew "watchman"
-  brew "xsv"
-  brew "zsh"
-  brew "zsh-completions"
-  brew "zplug"
+# Unix
+brew "universal-ctags"
+brew "git"
+brew "openssl"
+brew "rcm"
+brew "reattach-to-user-namespace"
+brew "shfmt"
+brew "tmux"
+brew "vim"
+brew "watchman"
+brew "xsv"
+brew "zsh"
+brew "zsh-completions"
+brew "zplug"
 
-  # Heroku
-  brew "heroku/brew/heroku"
-  brew "parity"
+# Heroku
+brew "heroku/brew/heroku"
+brew "parity"
 
-  # GitHub
-  brew "gh"
+# GitHub
+brew "gh"
 
-  # Image manipulation
-  brew "imagemagick"
+# Image manipulation
+brew "imagemagick"
 
-  # Programming language prerequisites and package managers
-  brew "autoconf"
-  brew "automake"
-  brew "coreutils"
-  brew "libtool"
-  brew "libyaml" # should come after openssl
-  brew "unixodbc"
+# Programming language prerequisites and package managers
+brew "autoconf"
+brew "automake"
+brew "coreutils"
+brew "libtool"
+brew "libyaml" # should come after openssl
+brew "unixodbc"
 
-  # Encryption / signing
-  cask "gpg-suite-no-mail"
+# Encryption / signing
+cask "gpg-suite-no-mail"
 
-  # Databases
-  # Update .zshrc accordingly
-  # export PATH="/usr/local/opt/postgresql@VV/bin:$PATH"
-  brew "postgresql@16"
-  brew "postgresql@17"
+# Databases
+# Update .zshrc accordingly
+# export PATH="/usr/local/opt/postgresql@VV/bin:$PATH"
+brew "postgresql@16"
+brew "postgresql@17"
 
-  # Start: customization
+# Start: customization
 
-  brew "aha"
-  brew "awscli"
-  brew "bat"
-  brew "eza"
-  brew "fd"
-  brew "fzf"
-  brew "git-cliff"
-  brew "git-delta"
-  brew "glow"
-  brew "graphviz"
-  brew "gum"
-  brew "httpie"
-  brew "jq"
-  brew "pgformatter"
-  brew "rg"
-  brew "terminal-notifier"
-  brew "tldr"
-  brew "tree"
-  brew "wxwidgets@3.2"
+brew "aha"
+brew "awscli"
+brew "bat"
+brew "eza"
+brew "fd"
+brew "fzf"
+brew "git-cliff"
+brew "git-delta"
+brew "glow"
+brew "graphviz"
+brew "gum"
+brew "httpie"
+brew "jq"
+brew "pgformatter"
+brew "rg"
+brew "terminal-notifier"
+brew "tldr"
+brew "tree"
+brew "wxwidgets@3.2"
 
-  cask "iterm2"
-  cask "visual-studio-code"
+cask "iterm2"
+cask "visual-studio-code"
 
-  # End: customization
+# End: customization
 EOF
 
 # Now that Homebrew's zsh is installed, register it as the login shell.
