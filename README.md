@@ -26,7 +26,7 @@ utilities, etc.) and install only the core CLI tooling:
 ### 1Password
 
 - open 1Password and sign-in with credentials
-- setup with CLI (step 2): https://developer.1password.com/docs/cli/get-started
+- follow the CLI setup instructions: https://developer.1password.com/docs/cli/get-started
 
 ### iTerm2
 
