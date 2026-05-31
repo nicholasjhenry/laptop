@@ -45,7 +45,7 @@ utilities, etc.) and install only the core CLI tooling:
 ### GPG
 
 - installed via the `mac` script's Brewfile
-- import sec/pub file from 1Password
+- import sec/pub file from 1Password: `gpg --import path/to/key.asc`
 
 ### Dotfiles
 
