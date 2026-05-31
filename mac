@@ -58,8 +58,7 @@ else
 fi
 
 update_shell() {
-    local shell_path
-    shell_path="$(command -v zsh)"
+    local shell_path="$HOMEBREW_PREFIX/bin/zsh"
 
     fancy_echo "Changing your shell to zsh ..."
     if ! grep "$shell_path" /etc/shells >/dev/null 2>&1; then
