@@ -1,8 +1,5 @@
 # Laptop
 
-- Follow me on [Twitter](http://www.twitter.com/nicholasjhenry)
-- Connect via [LinkedIn](http://ca.linkedin.com/in/nicholasjhenry)
-
 Laptop is a script to set up a macOS laptop for software development.
 
 It can be run multiple times on the same machine safely. It installs, upgrades, or skips packages
@@ -59,3 +56,8 @@ utilities, etc.) and install only the core CLI tooling:
 - FYI: https://github.com/tmux-plugins/tpm#installing-plugins
 
 You're good to go!
+
+## About
+
+- Follow me on [Twitter](http://www.twitter.com/nicholasjhenry)
+- Connect via [LinkedIn](http://ca.linkedin.com/in/nicholasjhenry)
