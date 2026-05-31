@@ -38,9 +38,7 @@ trap 'ret=$?; if [ $ret -ne 0 ] && [ $ret -ne 130 ] && [ $ret -ne 143 ]; then pr
 
 set -e
 
-if [ ! -d "$HOME/.bin/" ]; then
-    mkdir "$HOME/.bin"
-fi
+mkdir -p "$HOME/.bin"
 
 if [ ! -f "$HOME/.zshrc" ]; then
     touch "$HOME/.zshrc"
@@ -232,9 +230,7 @@ fi
 
 # Start: Customizations
 
-if [ ! -d "$HOME/Workspaces" ]; then
-    mkdir ~/Workspaces
-fi
+mkdir -p "$HOME/Workspaces"
 
 # `brew search font-`
 brew install font-caveat
