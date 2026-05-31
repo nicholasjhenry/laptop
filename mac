@@ -173,9 +173,16 @@ cask "visual-studio-code"
 EOF
 
 # Now that Homebrew's zsh is installed, register it as the login shell.
-if [ "$SHELL" != "$HOMEBREW_PREFIX/bin/zsh" ]; then
+case "$SHELL" in
+*/zsh)
+    if [ "$(command -v zsh)" != "$HOMEBREW_PREFIX/bin/zsh" ]; then
+        update_shell
+    fi
+    ;;
+*)
     update_shell
-fi
+    ;;
+esac
 
 if [ "$LAPTOP_SLIM" != "true" ]; then
 
