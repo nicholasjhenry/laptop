@@ -99,8 +99,6 @@ fi
 fancy_echo "Updating Homebrew formulae ..."
 brew update --force # https://github.com/Homebrew/brew/issues/1151
 brew bundle --file=- <<'EOF'
-tap "thoughtbot/formulae"
-tap "heroku/brew"
 
 # Unix
 brew "universal-ctags"
@@ -114,10 +112,6 @@ brew "watchman"
 brew "zsh"
 brew "zsh-completions"
 brew "zplug"
-
-# Heroku
-brew "heroku/brew/heroku"
-brew "parity"
 
 # GitHub
 brew "gh"
