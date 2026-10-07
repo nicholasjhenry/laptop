@@ -205,7 +205,6 @@ cask "slack"
 cask "sourcetree"
 cask "stay"
 cask "typora"
-cask "wkhtmltopdf"
 cask "zoom"
 
 # End: customization
