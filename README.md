@@ -35,25 +35,16 @@ utilities, etc.) and install only the core CLI tooling:
 
 - sign-in and sync settings with GitHub credentials
 
-### Sourcetree
-
-- General -> Fullname / Email
-
-### GPG
-
-- installed via the `mac` script's Brewfile
-- import sec/pub file from 1Password: `gpg --import path/to/key.asc`
-
 ### Dotfiles
 
 1. complete the 1Password setup above
 2. follow the install steps at https://github.com/nicholasjhenry/dotfiles
-3. copy `gitconfig` from 1Password to `~/Workspaces/dotfiles-secret/.`
 
-### Tmux
+## Software
 
-- install plugins: `prefix (Ctrl-x) + I`
-- FYI: https://github.com/tmux-plugins/tpm#installing-plugins
+- [ ] [OrbStack](https://orbstack.dev/download)
+- [ ] Configure DDPM (installed via cask in `mac`)
+- [ ] Setup Raycast: Switch Spotlight "Keyboard shortcuts" to Option-Space; configure Raycast with Command-Space
 
 You're good to go!
 
