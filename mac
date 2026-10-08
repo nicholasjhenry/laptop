@@ -212,10 +212,6 @@ EOF
 
 fi
 
-fancy_echo "Update heroku binary ..."
-brew unlink heroku
-brew link --force heroku
-
 fancy_echo "Configuring mise version manager ..."
 if command -v mise &> /dev/null; then
     fancy_echo "... already installed, skipping."
