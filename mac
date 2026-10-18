@@ -192,6 +192,7 @@ cask "dash"
 cask "ddpm" # Dell Display and Peripheral Manager
 cask "deckset"
 cask "drawio"
+cask "xykong/tap/flux-markdown", trusted: true
 cask "google-chrome"
 cask "google-drive"
 cask "grammarly-desktop"
