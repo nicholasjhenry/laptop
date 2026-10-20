@@ -158,7 +158,7 @@ brew "terminal-notifier"
 brew "tree"
 brew "wxwidgets@3.2"
 
-cask "iterm2"
+cask "ghostty"
 cask "visual-studio-code"
 
 # End: customization

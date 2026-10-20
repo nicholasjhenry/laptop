@@ -25,12 +25,6 @@ utilities, etc.) and install only the core CLI tooling:
 - open 1Password and sign-in with credentials
 - follow the CLI setup instructions: https://developer.1password.com/docs/cli/get-started
 
-### iTerm2
-
-- see the default profile to use `Solarized Light` (Colors -> Color presets)
-- set text: `FiraCode Nerd Font Mono` (Profile > Text > Font)
-- set as default
-
 ### VSCode
 
 - sign-in and sync settings with GitHub credentials
